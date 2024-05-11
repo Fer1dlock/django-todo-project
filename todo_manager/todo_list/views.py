@@ -37,5 +37,9 @@ class ToDoListDoneView(ListView):
     queryset = ToDoItem.objects.filter(done=True).all()
 
 
+class ToDoListNotDoneView(ListView):
+    queryset = ToDoItem.objects.filter(done=False).all()
+
+
 class ToDoDetailView(DetailView):
     model = ToDoItem

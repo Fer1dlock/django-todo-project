@@ -8,4 +8,5 @@ urlpatterns = [
     path("<int:pk>/", views.ToDoDetailView.as_view(), name="detail"),
     path("list/", views.ToDoListView.as_view(), name="list"),
     path("done/", views.ToDoListDoneView.as_view(), name="done"),
+    path("not_done/", views.ToDoListNotDoneView.as_view(), name="not_done"),
 ]
